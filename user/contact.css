@@ -1,0 +1,505 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  button.normal
+  {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 15px 30px;
+      color: #000;
+      background-color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: 0.2s;
+  }
+  
+  body {
+    width: 100%;
+  }
+  
+  #header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #C6CCE6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li
+{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a
+{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+#navbar li a:hover,
+#navbar li a.active
+{
+      color: goldenrod;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: goldenrod;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile
+{
+    display: none;
+    align-items: center;
+}
+
+#close
+{
+    display: none;
+}
+.contract
+{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url(images/background-kupi-contact-form.png);
+	background-size: cover;
+}
+
+.contract .content
+{
+	max-width: 800px;
+	text-align: center;
+}
+
+.contract .content h2
+{
+	font-size: 36px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.contract .content p
+{
+	
+	font-weight: 300;
+	color: #fff;
+}
+
+.container
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.container .contactInfo
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	left: 30px;
+}
+ 
+.container .contactInfo .box
+{
+	
+	position: relative;
+	padding: 20px 0; 
+	display: flex;
+}
+
+.container .contactInfo .box .icon
+{
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	 
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}  
+
+.container .contactInfo .box .text
+{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.container .contactInfo .box .text h3
+{
+	
+	font-weight: 500;
+	color: #00bcd4;
+}
+
+.contactForm
+{
+	top: 0px;
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+
+.contactForm h2
+{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+
+.contactForm .inputBox
+{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+
+.contactForm .inputBox span
+{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span
+{
+	color: #e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+	
+}
+
+.contactForm .inputBox #btn
+{
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.contactForm .inputBox #btn:hover{
+	background-color: red;
+}
+
+/*footer*/
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo
+{
+    margin-bottom: 30px;
+    height: 50px;
+    width: 200px;
+}
+
+footer h4
+{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p
+{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a
+{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin: 10px;
+}
+
+footer .follow 
+{
+    margin-top: 20px;
+}
+
+footer .follow i
+{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img
+{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install img
+{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover
+{
+    color: #088178;
+}
+
+footer .copyright
+{
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width: 799px)
+{
+	.contract
+	{
+		padding: 50px;
+	}
+	.container
+	{
+		flex-direction: column;
+	}
+	.container .contactInfo
+	{
+		margin-bottom: 40px;
+	}
+	.container .contactInfo,
+	.contactForm
+	{
+		 width:  100%;
+		top: 20px;
+	}
+	
+
+
+#navbar 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active
+    {
+        right: 0;
+    }
+
+    #navbar li
+    {
+        margin-bottom: 25px;
+    }
+
+    #mobile
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    #close
+    {
+        display: none;
+    }
+
+    #mobile i
+    {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #mobile .cart
+    {
+        display: none;
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close
+    {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #navbar 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active
+    {
+        right: 0;
+    }
+
+    #navbar li
+    {
+        margin-bottom: 25px;
+    }
+
+    #mobile
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    #close
+    {
+        display: none;
+    }
+
+    #mobile i
+    {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #mobile .cart
+    {
+        display: none;
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close
+    {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 1280px)
+{
+	.header
+{
+	padding: 14px 2%;
+	transition: .2s;
+}
+	
+	.Beauty_Bliss
+{
+	padding: 5px 0;
+	margin: 0px 20px;
+}
+	.navbar .btnLogin
+{
+	padding: 5px 0;
+	margin: 0px 20px;
+}
+}
+

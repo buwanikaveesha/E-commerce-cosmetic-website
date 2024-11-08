@@ -1,0 +1,50 @@
+
+*{
+  background-color: antiquewhite
+   
+}
+
+.container {
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 35%;
+    padding: 30px;
+    
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  /*.btn {
+
+    width: 100%;
+    padding: 10px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+  }*/
+  
+  
+  
+  
+  
+  
